@@ -16,44 +16,6 @@ void Chuan_Hoa(char s[]){
 			i--;
 		}
 }
-int is_nguyenam(char c)
-{
-  //khai bao bien
-  
-  switch(c)
-  {
- 	  case 'a':
- 	  case 'e':	
- 	  case 'i':
-	  	case 'o':
-	  	case 'u':	
-	  	case 'A':
-	  	case 'E':	
-	  	case 'I':
-  		case 'O':
-  		case 'U':
-				  return 1;
-				default:
-				  return 0;	
-		}
-}
-
-int demnguyenam()
-{
-  //khai bao bien
-  int i=0;
-  int tongnguyenam=0;
-  while(str[i]!='\0') //chua phai la ky hieu ket thuc chuoi
-  {
-  	 //dem tong so nguyen am
-				if(is_nguyenam(str[i])==1)
-				{
-				  tongnguyenam++;
-				} 
-	i++;
-	}
-	return tongnguyenam;
-}
 
 void intudau(char s[]){
 //in chu cai dau cua chuoi
@@ -124,7 +86,6 @@ int main() {
     Chuan_Hoa(str);
     printf("Chuoi sau chuan hoa:");
     puts(str);
-    printf("So luong nguyen am trong chuoi: %d",demnguyenam());
     printf("\nTu dau tien la:");
     intudau(str);
     printf("\nTu cuoi cung la:");
