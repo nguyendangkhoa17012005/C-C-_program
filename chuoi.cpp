@@ -1,99 +1,35 @@
-#include <stdio.h>
-#include <string.h>
-#define Max 100
-char str[100];
-void Chuan_Hoa(char s[]){
-// xoa khoang trang thua dau chuoi
-	while( s[0] == ' ' ) strcpy(&s[0], &s[1]);
-// xoa khoang trang thua cuoi chuoi
-	while( s[strlen(s)-1 ] == ' ') s[strlen(s)-1 ] = '\0';
-// xoa khoang trang thua giua hai tu
-	int i;
-	for(i = 0; i < strlen(s); i++)
-		if(s[i] == ' ' && s[i+1] == ' ')
+#include<stdio.h>
+#include<string.h>
+char s[100] = "dA1 h0C nH4 trang";
+void sapxep(char a[])
+{
+	int i = 0,j = 0;char b[100];
+	
+	while(a[i] != '\0')
+	{
+		if(a[i] >= 'A' && a[i] <= 'Z' || a[i] >= 'a' && a[i] <='z')
 		{
-			strcpy(&s[i], &s[i+1]);
-			i--;
+			b[j++] =  a[i];		
 		}
+		i++;
+	}
+	b[j] = '\0';
+	printf("\nDay toan chu cai: %s",b);
+	int n = strlen(b);
+    for (int i = 0; i < n-1; i++) {
+        for (int j = i+1; j < n; j++) {
+            if (b[i] > b[j]) {
+                char temp = b[i];
+                b[i] = b[j];
+                b[j] = temp;
+            }
+        }
+    }
+	printf("\nChuoi sap xep: %s",b);
 }
 
-void intudau(char s[]){
-//in chu cai dau cua chuoi
-	int i=0;
-	while (s[i]!='\0')
-		if (s[i]!=32)
-		{
-		printf("%c",s[i]);
-		i++;
-		}
-	else
-	break;
-}
-void intucuoi(char s[]){
-// in chu cai cuoi chuoi
-	int i=strlen(s)-1,j=0;
-	char s1[Max];
-	while (s[i]!=32)
-	{
-		s1[j]=s[i];
-		i--;
-		j++;
-	}
-	strrev(s1);
-	printf("%s",s1);
-}
-void viethoa(char s[]){
-	int i;
-	strlwr(s);//viet thuong tat ca
-	s[0]=s[0]-32;//viet hoa chu cai dau cua tu dau tien chuoi
-	for (i = 0; i < strlen(s); i++)//trong chuoi
-	{
-		if(s[i] ==' ')
-		s[i+1]=s[i+1]-32;
-	}
-	
-	puts(s);
-}
-int slchuso(char s[])
+int main()
 {
-	int c = 0;
-	//so luong chu so
-	for (int i = 0; i < strlen(s); i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			c++;
-		}
-	}
-	return c;
-}
-void doichuso(char s[])
-{
-	int c = 0;
-	for (int i = 0; i < strlen(s); i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			s[i] = '*';
-		}
-	}
-	puts(s);
-}
-int main() {
-    
-    printf("Nhap chuoi:");
-    fgets(str, sizeof(str), stdin);
-    Chuan_Hoa(str);
-    printf("Chuoi sau chuan hoa:");
-    puts(str);
-    printf("\nTu dau tien la:");
-    intudau(str);
-    printf("\nTu cuoi cung la:");
-    intucuoi(str);
-    printf(" Chuoi ki tu duoc in hoa chu cai dau :");
-    viethoa(str);
-    printf("So luong chu so trong chuoi : %d",slchuso(str));
-    printf("\nChuoi duoc doi ki tu:");
-    doichuso(str);
-    return 0;
+	printf("Chuoi vua nhap la: %s",s);
+	sapxep(s);
 }
