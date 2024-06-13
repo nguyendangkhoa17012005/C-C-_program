@@ -1,1 +1,10 @@
-
+Câu 1 : Đổi số max và số min
+vd :
+Ma tran vua nhap
+1       2       3
+4       5       6
+7       8       9
+mang sau khi doi:
+9       2       3
+4       5       6
+7       8       1
