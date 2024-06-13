@@ -6,3 +6,23 @@ vd: Sample Input :
 69 96 93 27 84 32 78 56
 Sample Output :
 3 
+Cau 3 : Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các giá trị khác nhau trong mảng theo thứ tự xuất hiện, mỗi giá trị chỉ liệt kê 1 lần
+Sample Input 0
+9
+1 2 3 4 1 2 3 4 5
+Sample Output 0
+1 2 3 4 5
+CAU 4 :Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các giá trị xuất hiện trong mảng kèm theo tần suất tương ứng, mỗi giá trị chỉ liệt kê một lần theo thứ tự xuất hiện.
+Sample Input 2
+6
+1 2 3 3 3 3
+Sample Output 2
+1 1
+2 1
+3 4
+CAU 5 :Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các chỉ số i trong mảng thỏa mãn : Tổng các phần tử bên trái i và tổng các phần tử bên phải i là các số nguyên tố
+Sample Input 0
+5
+53 5 69 47 19
+Sample Output 0
+3
