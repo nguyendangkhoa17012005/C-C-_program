@@ -1,2 +1,8 @@
 Câu 1 : Cho mảng số nguyên A[] gồm N phần tử, hãy đếm xem trong mảng A[] tồn tại bao nhiêu cặp số A[i], A[j] với i khác j sao cho tổng của 2 phần tử này bằng số K cho trước.
-vd 1 2 3 1 2 có 4 cặp số = k ( với k = 3)
+vd: 1 2 3 1 2 có 4 cặp số = k ( với k = 3)
+Câu 2 : Cho mảng số nguyên A[] gồm N phần tử, hãy tìm độ chênh lệch nhỏ nhất giữa 2 phần tử trong mảng.
+vd: Sample Input :
+8
+69 96 93 27 84 32 78 56
+Sample Output :
+3 
