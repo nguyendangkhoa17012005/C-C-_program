@@ -1,1 +1,329 @@
-bb
+Bài 1. Tính tổng 1.
+Tính tổng hàm S(n) = 1 + 2 + 3 + 4 + .. + n bằng đệ quy. Nếu bạn chưa biết thì S(n) có thể tính nhanh bằng công thức S(n) = n * (n + 1) / 2
+Input Format
+Số nguyên dương n.
+Constraints
+0≤n≤1000; Chú ý các bạn phải code bằng đệ quy nhé.
+Output Format
+In ra S(n).
+Sample Input 0
+773
+Sample Output 0
+299151
+
+Bài 2. Tính tổng 2.
+Tính tổng hàm S(n) = 1^2 + 2^2 + 3^2 + 4^2 + .. + n^2 bằng đệ quy. Nếu bạn chưa biết thì S(n) có thể tính nhanh bằng công thức S(n) = n * (n + 1) * (2n + 1) / 6
+Input Format
+Số nguyên dương n.
+Constraints
+0≤n≤1000; Chú ý các bạn phải code bằng đệ quy nhé.
+Output Format
+In ra kết quả của S(n)
+Sample Input 0
+53
+Sample Output 0
+51039
+
+Bài 3. Tính tổng 3.
+Tính tổng hàm S(n) = 1^3 + 2^3 + 3^3 + 4^3 + .. + n^3 bằng đệ quy. Nếu bạn chưa biết thì S(n) có thể tính nhanh bằng công thức S(n) = [(n * (n + 1) / 2)]^2
+Input Format
+Số nguyên dương n.
+Constraints
+0≤n≤10^3; Chú ý các bạn phải code bằng đệ quy nhé.
+Output Format
+In ra kết quả của S(n)
+Sample Input 0
+435
+Sample Output 0
+8992728900
+
+Bài 4. Tính tổng 4
+Tính tổng hàm S(n) = -1 + 2 -3 + 4 - 5 + 6 + ... + (-1)^n * n bằng đệ quy. Nếu bạn chưa biết thì S(n) có thể tính nhanh bằng công thức Nếu N chẵn thì S(n) = n / 2, còn nếu N lẻ thì S(n) = (n - 1) / 2 - n
+Input Format
+Số nguyên dương n.
+Constraints
+1≤n≤10^3; Chú ý các bạn phải code bằng đệ quy nhé.
+Output Format
+In ra kết quả của S(n)
+Sample Input 0
+919
+Sample Output 0
+-460
+
+Bài 5. Tính giai thừa
+Tính n giai thừa bằng đệ quy.
+Input Format
+Số nguyên dương N.
+Constraints
+0≤n≤10;
+Output Format
+Kết quả của N!
+Sample Input 0
+6
+Sample Output 0
+720
+
+Bài 6. Số fibonacci
+Dãy số fibonacci là dãy số thỏa mãn : F1=0, F2=1, Fn=Fn-1+Fn-2. Hãy tìm số Fibonacci thứ n sử dụng đệ quy. Độ phức tạp của code đệ quy là O(1.618^n) không thể áp dụng được với n lớn.
+Input Format
+Số nguyên dương n.
+Constraints
+1≤n≤15;
+Output Format
+In ra số Fibonacci thứ n.
+Sample Input 0
+1
+Sample Output 0
+0
+
+Bài 7. Tính tổ hợp chập K của N
+Cho 2 số nguyên dương N và K. Hãy tính tổ hợp chập K của N. Tiện thể các bạn ôn lại một vài tính chất của tổ hợp chập K của N nhé.
+ 
+Input Format
+2 số nguyên dương N và K.
+Constraints
+0≤k≤n≤10.
+Output Format
+Kết quả của tổ hợp chập K của N.
+Sample Input 0
+10 2
+Sample Output 0
+45
+
+Bài 8. Ước chung lớn nhất, bội chung nhỏ nhất.
+Cho 2 số a và b, hãy tính ước chung lớn nhất và bội chung nhỏ nhất của 2 số a và b. Trong đó hàm UCLN sử dụng đệ quy để tính.
+Input Format
+2 số nguyên dương a và b.
+Constraints
+1≤a,b≤10^12;
+Output Format
+In ra UCLN và BCNN của 2 số. Dữ liệu đảm bảo UCLN của 2 số nằm trong khoảng số nguyên 64 bit.
+Sample Input 0
+10 20
+Sample Output 0
+10 20
+
+Bài 9. Lũy thừa nhị phân.
+Cho 2 số nguyên không âm a và b. Hãy tính a^b%(10^9+7). Kiến thức bạn cần sử dụng là Binary Exponentiation.
+ 
+Input Format
+2 số nguyên dương a, b
+Constraints
+1≤a,b≤10^9
+Output Format
+In ra kết quả của bài toán.
+Sample Input 0
+2 10
+Sample Output 0
+1024
+
+Bài 10. Tính tổng 5
+Tính tổng S(n) = 1/1 + 1/2 + 1/3 + ... + 1/n bằng đệ quy.
+Input Format
+Số nguyên dương n.
+Constraints
+1≤n≤1000;
+Output Format
+In ra S(n) lấy 3 số sau dấu phẩy.
+Sample Input 0
+18
+Sample Output 0
+3.495
+
+Bài 11. Chuyển hệ thập phân sang hệ nhị phân
+Cho một số nguyên không âm N, hãy in ra dạng biểu diễn nhị phân của số N.
+Input Format
+Số nguyên không âm N
+Constraints
+0≤n≤10^18
+Output Format
+Biểu diễn nhị phân của số nguyên N.
+Sample Input 0
+8
+Sample Output 0
+1000
+
+Bài 12. Chuyển hệ thập phân sang hệ 16.
+Cho một số nguyên không âm N, hãy in ra dạng biểu diễn của N dưới hệ 16.
+Input Format
+Số nguyên không âm N
+Constraints
+0≤n≤10^18
+Output Format
+Biểu diễn hệ 16 của số nguyên N.
+Sample Input 0
+995
+Sample Output 0
+3E3
+
+Bài 13. Tính tổng chữ số sử dụng đệ quy
+Cho một số nguyên không âm N, hãy tính tổng chữ số của N sử dụng kỹ thuật đệ quy.
+Input Format
+Số nguyên không âm N
+Constraints
+0≤n≤10^18
+Output Format
+Tổng các chữ số của N
+Sample Input 0
+123456789
+Sample Output 0
+45
+
+[Đệ Quy]. Bài 14. Đếm số lượng chữ số của N sử dụng đệ quy.
+Cho một số nguyên không âm N, hãy đếm số lượng chữ số của N.
+Input Format
+Số nguyên không âm N
+Constraints
+0≤n≤10^18
+Output Format
+Số lượng chữ số của N.
+Sample Input 0
+123452
+Sample Output 0
+6
+
+Bài 15. Tìm chữ số đầu tiên của số nguyên
+Cho một số nguyên không âm N, hãy in ra chữ số đầu tiên của N.
+Input Format
+Số nguyên không âm N
+Constraints
+0≤n≤10^18
+Output Format
+In ra chữ số đầu tiên của N.
+Sample Input 0
+56721
+Sample Output 0
+5
+
+Bài 16. Chữ số lớn nhất và nhỏ nhất
+Cho một số nguyên không âm N, hãy in ra chữ số lớn nhất và chữ số nhỏ nhất của N.
+Input Format
+Số nguyên dương N
+Constraints
+10≤n≤10^18
+Output Format
+Chữ số lớn nhất và nhỏ nhất của N.
+Sample Input 0
+1256782
+Sample Output 0
+8 1
+
+Bài 17. In ra số nguyên
+Cho một số nguyên không âm N, hãy in ra N theo thứ tự các chữ số từ trái qua phải và từ phải qua trái. Chú ý phải sử dụng hàm đệ quy cho cả 2 yêu cầu.
+Input Format
+Số nguyên không âm N.
+Constraints
+0≤n≤10^18
+Output Format
+Dòng đầu tiên in ra các chữ số của n theo thứ tự từ trái qua phải. Dòng thứ hai in ra các chữ số của n theo thứ tự từ phải qua trái. Các chữ số được viết cách nhau một dấu cách.
+Sample Input 0
+21218
+Sample Output 0
+2 1 2 1 8 
+8 1 2 1 2 
+
+Bài 18. Tính tổng chữ số chẵn lẻ.
+Cho số nguyên không âm N, hãy tính tổng các chữ số chẵn, tổng các chữ số lẻ của N.
+Input Format
+Số nguyên không âm N.
+Constraints
+0≤n≤10^18
+Output Format
+Dòng đầu tiên in ra tổng các chữ số chẵn. Dòng thứ 2 in ra tổng các chữ số lẻ.
+Sample Input 0
+123456
+Sample Output 0
+12
+9
+
+Bài 19. Kiểm tra chữ số chẵn.
+Cho số nguyên không âm N, hãy kiểm tra xem tất cả các chữ số của N có phải đều là số chẵn hay không?
+Input Format
+Số nguyên không âm N.
+Constraints
+0≤n≤10^18
+Output Format
+In ra YES nếu n toàn chữ số chẵn, ngược lại in ra NO.
+Sample Input 0
+2280820
+Sample Output 0
+YES
+
+Bài 21. Kiểm tra mảng đối xứng.
+Cho một mảng số nguyên A gồm N phần tử, hãy kiểm tra xem mảng có đối xứng hay không bằng cách sử dụng hàm đệ quy.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 là N số nguyên trong mảng được viết cách nhau một dấu cách.
+Constraints
+1≤n≤1000; 1≤A[i]≤10^6
+Output Format
+In ra YES nếu mảng A là mảng đối xứng, ngược lại in ra NO.
+Sample Input 0
+5
+1 2 3 2 1
+Sample Output 0
+YES
+
+[Đệ Quy]. Bài 22. In mảng.
+Cho một mảng số nguyên A gồm N phần tử, hãy in ra mảng theo thứ tự từ trái qua phải và từ phải qua trái bằng đệ quy.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 là N số nguyên trong mảng được viết cách nhau một dấu cách.
+Constraints
+1≤n≤1000; 1≤A[i]≤10^6
+Output Format
+Dòng đầu tiên in ra các phần tử trong mảng theo chiều từ trái qua phải. Dòng thứ 2 in ra các phần tử trong mảng theo chiều từ phải qua trái.
+Sample Input 0
+5
+1 2 3 4 5
+Sample Output 0
+1 2 3 4 5
+5 4 3 2 1
+
+Bài 23. Kiểm tra mảng toàn chẵn.
+Cho một mảng số nguyên A gồm N phần tử, hãy kiểm tra xem mảng có phải toàn số chẵn hay không?
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 là N số nguyên trong mảng được viết cách nhau một dấu cách.
+Constraints
+1≤n≤1000; 1≤A[i]≤10^6
+Output Format
+In ra YES nếu mảng toàn số chẵn, ngược lại in ra NO.
+Sample Input 0
+4
+2 8 10 20012
+Sample Output 0
+YES
+
+Bài 24. Kiểm tra mảng tăng dần.
+Cho một mảng số nguyên A gồm N phần tử, hãy kiểm tra xem mảng có phải là mảng tăng dần hay không, mảng tăng dần được định nghĩa là mảng mà phần tử hiện tại luôn lớn hơn các phần tử đứng trước nó.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 là N số nguyên trong mảng được viết cách nhau một dấu cách.
+Constraints
+1≤n≤1000; 1≤A[i]≤10^6
+Output Format
+In ra YES nếu mảng toàn là mảng tăng dần, ngược lại in ra NO.
+Sample Input 0
+5
+1 1 8 9 20
+Sample Output 0
+NO
+Sample Input 1
+5
+1 1 1 1 1
+Sample Output 1
+NO
+
+Bài 25. Binary search
+Cho một mảng số nguyên A gồm N phần tử đã được sắp xếp giảm dần, hãy viết hàm tìm kiếm nhị phân bằng đệ quy để kiểm tra xem phần tử X có nằm trong mảng hay không.
+Input Format
+Dòng đầu tiên là số nguyên dương N. Dòng thứ 2 là N số nguyên trong mảng được viết cách nhau một dấu cách. Dòng thứ 3 là số nguyên dương X.
+Constraints
+1≤n≤1000; 1≤X,A[i]≤10^6
+Output Format
+In ra 1 nếu X xuất hiện trong mảng, ngược lại in ra 0.
+Sample Input 0
+5
+5 5 3 2 1
+3
+Sample Output 0
+1
+
+
