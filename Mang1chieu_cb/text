@@ -1,0 +1,616 @@
+BÀI 1. ĐẾM CHẴN LẺ, TỔNG CHẴN LẺ
+Cho mảng số nguyên A[] gồm N phần tử, nhiệm vụ của bạn là đếm xem trong mảng có bao nhiêu số chẵn, bao nhiêu số lẻ, tổng các phần tử là số chẵn, tổng các phần tử là số lẻ.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; -10^3<=A[i]<=10^3;
+Output Format
+Dòng đầu tiên in ra số lượng số chắn. Dòng thứ 2 in ra số lượng số lẻ. Dòng thứ 3 in ra tổng các số chẵn. Dòng thứ 4 in ra tổng các số lẻ.
+Sample Input 0
+6
+-711 327 372 779 451 -864 
+Sample Output 0
+2
+4
+-492
+846
+
+BÀI 2. TRUNG BÌNH CỘNG NGUYÊN TỐ
+Cho mảng số nguyên A[] gồm N phần tử, nhiệm vụ của bạn là tính trung bình cộng của các số là số nguyên tố trong dãy. Dữ liệu đảm bảo có ít nhất 1 phần tử là số nguyên tố trong dãy.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; -10^3<=A[i]<=10^3;
+Output Format
+In ra đáp án của bài toán lấy 3 số sau dấu phẩy.
+Sample Input 0
+5
+-911 234 151 347 231 
+Sample Output 0
+249.000
+Sample Input 1
+3 
+1 2 5
+Sample Output 1
+3.500
+
+BÀI 3. SỐ NHỎ NHẤT
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy đếm xem trong mảng của bạn có bao nhiêu số có cùng giá trị nhỏ nhất. Ví dụ mảng A = {1, 2, 1, 3, 5} thì số nhỏ nhất trong mảng là 1 xuất hiện 2 lần.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; -10^3<=A[i]<=10^3;
+Output Format
+In ra đáp án của bài toán
+Sample Input 0
+5
+-854 600 222 472 207 
+Sample Output 0
+1
+
+BÀI 4. LỚN HƠN, NHỎ HƠN
+
+Cho mảng số nguyên A[] gồm N phần tử và số nguyên X, hãy đếm xem trong mảng có bao nhiêu số lớn hơn X và bao nhiêu số nhỏ hơn X.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng; Dòng thứ 3 là số nguyên X
+Constraints
+1<=N<=1000; -10^3<=A[i], X<=10^3;
+Output Format
+Dòng 1 in ra các số nhỏ hớn X, dòng 2 in ra các số lớn hơn X
+Sample Input 0
+5
+-798 183 434 850 555 
+135
+Sample Output 0
+1
+4
+
+BÀI 5. IN PHẦN TỬ
+
+Cho mảng số nguyên A[] gồm N phần tử, nhiệm vụ của bạn là in ra các phần tử là số chẵn ở chỉ số chẵn, nếu mảng không tồn tại phần tử như vậy thì in ra "NONE".
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng;
+Constraints
+1<=N<=1000; -10^3<=A[i]<=10^3;
+Output Format
+In ra các số cách nhau một khoảng trắng hoặc in ra NONE nếu không tìm thấy số thỏa mãn điều kiện của đầu bài.
+Sample Input 0
+5
+-971 107 458 222 200 
+Sample Output 0
+458 200 
+
+BÀI 6. CẶP SỐ 1
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy đếm xem trong mảng A[] tồn tại bao nhiêu cặp số A[i], A[j] với i khác j sao cho tổng của 2 phần tử này bằng số K cho trước.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng; Dòng thứ 3 là số nguyên K
+Constraints
+1<=N<=1000; 0<=A[i], X<=10^3;
+Output Format
+In ra số lượng cặp thỏa mãn
+Sample Input 0
+5
+1 2 3 1 2
+3
+Sample Output 0
+4
+
+BÀI 7. CẶP SỐ 2
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy tìm độ chênh lệch nhỏ nhất giữa 2 phần tử trong mảng.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng;
+Constraints
+1<=N<=1000; 0<=A[i], X<=10^3;
+Output Format
+In ra độ chênh lệch nhỏ nhất giữa 2 phần tử bất kì trong mảng
+Sample Input 0
+8
+69 96 93 27 84 32 78 56 
+Sample Output 0
+3
+
+BÀI 8. LIỆT KÊ CÁC GIÁ TRỊ KHÁC NHAU
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các giá trị khác nhau trong mảng theo thứ tự xuất hiện, mỗi giá trị chỉ liệt kê 1 lần. Ở thời điểm hiện tại các bạn có thể for trâu để giải bài này, sau này sẽ dùng cách tối ưu hơn.
+Gợi ý : Duyệt qua từng chỉ số i của mảng, nếu kiểm tra được đây là giá trị đầu tiên mà bạn gặp thì sẽ in ra giá trị này, tức là trước đó trong đoạn từ 0 tới chỉ số i - 1 ko có giá trị nào giống A[i], ví dụ mảng A = {1, 1, 3, 1, 5, 1, 8}, khi bạn xét số 5 bạn sẽ ra nó vì trước nó ko có giá trị nào giống nó cả. Để mà kiểm tra có in ra giá trị A[i] hay không bạn làm 1 vòng for duyệt từ chỉ số 0 tới chỉ số i - 1 và kiểm tra xem có giá trị nào bằng với A[i] hay ko, nếu ko có thì hãy in ra, có thể kiểm tra bằng cách sử dụng 1 biến đánh dấu.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng;
+Constraints
+1<=N<=1000; 0<=A[i], X<=10^3;
+Output Format
+In ra các giá trị khác nhau theo thứ tự xuất hiện, mỗi giá trị chỉ liệt kê 1 lần.
+Sample Input 0
+9 
+1 2 3 4 1 2 3 4 5
+Sample Output 0
+1 2 3 4 5
+
+BÀI 9. TẦN SUẤT
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các giá trị xuất hiện trong mảng kèm theo tần suất tương ứng, mỗi giá trị chỉ liệt kê một lần theo thứ tự xuất hiện.
+Gợi ý : Xét từng chỉ số i trong mảng, đối với mỗi chỉ số i sẽ duyệt các phần tử đứng trước nó để xem nó đã xuất hiện trước đó hay chưa, nếu chưa xuất hiện thì tiến hành duyệt các phần tử đứng sau chỉ số i và đếm xem có bao nhiêu phần tử bằng với a[i]
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng;
+Constraints
+1<=N<=1000; 0<=A[i]<=10^3;
+Output Format
+In ra nhiều dòng, mỗi dòng gồm giá trị kèm theo tần suất tương ứng
+Sample Input 0
+7
+4 2 6 3 0 7 7 
+Sample Output 0
+4 1
+2 1
+6 1
+3 1
+0 1
+7 2
+Sample Input 1
+5
+1 1 1 1 1
+Sample Output 1
+1 5
+Sample Input 2
+6
+1 2 3 3 3 3
+Sample Output 2
+1 1
+2 1
+3 4
+
+BÀI 10. CÂN BẰNG NGUYÊN TỐ
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các chỉ số i trong mảng thỏa mãn : Tổng các phần tử bên trái i và tổng các phần tử bên phải i là các số nguyên tố
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng;
+Constraints
+1<=N<=1000; 0<=A[i], X<=10^3;
+Output Format
+In ra các chỉ số thỏa mãn trên một dòng, các số cách nhau một khoảng trắng
+Sample Input 0
+5
+53 5 69 47 19 
+Sample Output 0
+3 
+
+BÀI 11. LIỆT KÊ VÀ ĐẾM SỐ FIBONACCI.
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các số trong mảng là số Fibonacci.
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+1<=N<=10^6; 0<=A[i]<=10^18
+Output Format
+In ra các số là số Fibonacci trong dãy theo thứ tự xuất hiện. Nếu trong mảng không tồn tại số Fibonacci nào thì in ra "NONE".
+Sample Input 0
+6
+1597 25358 7318 5878 0 2634 
+Sample Output 0
+1597 0 
+
+BÀI 12. VỊ TRÍ SỐ LỚN NHẤT, NHỎ NHẤT
+Cho mảng số nguyên A[] gồm N phần tử, hãy tìm vị trí(bắt đầu từ 0) cuối cùng của giá trị nhỏ nhất trong mảng và vị trí đầu tiên của giá trị lớn nhất trong mảng. Tức là nếu có nhiều số có cùng giá trị nhỏ nhất bạn phải in ra ví trí cuối cùng, và có nhiều số có cùng giá trị lớn nhất trong mảng bạn phải in ra vị trí đầu tiên lớn nhất đó.
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+1<=N<=10^6; 1<=A[i]<=10^6
+Output Format
+In trên 1 dòng 2 chỉ số mà bạn tìm được.
+Sample Input 0
+9
+936 234 471 168 834 82 280 674 881 
+Sample Output 0
+5 0
+
+BÀI 13. TÍNH TỔNG VÀ TÍCH CÁC PHẦN TỬ
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy tính tổng, tích của các phần tử trong mảng và lấy dư với 10^9+7.
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+1<=N<=10^6; 0<=A[i]<=10^6
+Output Format
+Dòng đầu tiên in ra tổng các phần tử trong mảng chia dư với 10^9 + 7; Dòng thứ hai in ra tích các phần tử trong mảng chia dư với 10^9 +7;
+Sample Input 0
+6
+997893 995053 997553 996212 998316 992144 
+Sample Output 0
+5977171
+436766709
+
+BÀI 14. TÌM GCD CỦA MỌI PHẦN TỬ TRONG MẢNG
+
+Cho mảng số nguyên A[] gồm N phần tử, tìm số lớn nhất mà mọi số trong mảng đều chia hết cho số đó.
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+1<=N<=10^6; 0<=A[i]<=10^6
+Output Format
+In ra kết quả của bài toán
+Sample Input 0
+12
+994626 994448 996097 995790 999692 993222 991401 999038 997163 990016 993004 990549 
+Sample Output 0
+1
+
+BÀI 15. SỐ LỚN THỨ NHẤT VÀ LỚN THỨ 2
+
+Cho mảng số nguyên A[] gồm N phần tử, tìm số lớn nhất và lớn thứ 2 trong mảng. Chú ý 2 giá trị này có thể giống nhau
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+2<=N<=10^6; 0<=A[i]<=10^6
+Output Format
+In ra số lớn thứ nhất và lớn thứ 2 trong mảng
+Sample Input 0
+4
+996817 993012 990914 998837 
+Sample Output 0
+998837 996817
+
+BÀI 16. LIỆT KÊ
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy đếm số lượng các phần tử thỏa mãn các yêu cầu sau
+1.	Số lượng số nguyên tố trong dãy
+2.	Số lượng số thuận nghịch trong dãy
+3.	Số lượng số chính phương trong dãy
+4.	Số lượng số có tổng chữ số của nó là số nguyên tố.
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+1<=N<=100; 0<=A[i]<=10000;
+Output Format
+In ra 4 dòng số lượng số tương ứng với 4 yêu cầu trên
+Sample Input 0
+6
+4 1682 5972 6331 9872 3956 
+Sample Output 0
+0
+1
+1
+4
+
+BÀI 17. MẢNG ĐỐI XỨNG
+Cho mảng số nguyên A[] gồm N phần tử, kiểm tra xem mảng có đối xứng hay không?
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+1<=N<=10^6; 0<=A[i]<=10^6
+Output Format
+In ra YES hoặc NO tương ứng với mảng đối xứng hoặc không.
+Sample Input 0
+20
+870 1069 2363 375 2188 6059 6775 495 643 832 832 643 495 6775 6059 2188 375 2363 1069 870 
+Sample Output 0
+YES
+
+BÀI 18. LIỀN KỀ TRÁI DẤU
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê theo thứ tự xuất hiện các số thỏa mãn có ít nhất 1 số trái dấu với nó đứng cạnh nó.
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+2<=N<=10^6; -10^6<=A[i]<=10^6
+Output Format
+In ra kết quả của bài toán
+Sample Input 0
+9
+-992414 993205 998602 990785 -993397 990527 995429 991288 -992221 
+Sample Output 0
+-992414 993205 990785 -993397 990527 991288 -992221
+
+BÀI 19. LẬT NGƯỢC MẢNG
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy lật ngược mảng A[] và in ra kết quả
+Input Format
+Dòng đầu tiên là N : số lượng phần tử trong mảng; Dòng thứ 2 gồm N phần tử viết cách nhau một khoảng trống.
+Constraints
+1<=N<=1000; 0<=A[i]<=10^3;
+Output Format
+In ra mảng sau khi đã đảo ngược các phần tử
+Sample Input 0
+5
+69 94 77 28 81 
+Sample Output 0
+81 28 77 94 69 
+
+BÀI 20. LỚN HƠN LIỀN KỀ
+Cho mảng số nguyên A[] gồm N phần tử, nhiệm vụ của bạn là liệt kê các phần tử trong mảng thỏa mãn nó lớn hơn cả phần tử đứng trước và phần tử đứng sau nó. 2 phần tử đầu tiên và cuối cùng của mảng không được coi là thỏa mãn.
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; 0<=A[i]<=10^3;
+Output Format
+In ra các số thỏa mãn trên 1 dòng
+Sample Input 0
+7
+341 607 986 616 131 857 234 
+Sample Output 0
+986 857 
+
+BÀI 21. CHÈN 1.
+
+Cho mảng số nguyên A[] gồm N phần tử, nhiệm vụ của bạn là chèn phần tử X vào vị trí K trong mảng sau đó in ra mảng.
+Input Format
+Dòng đầu tiên là 3 số nguyên dương N, X, K; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=K<=N<=1000; -10^3<=A[i], X<=10^3;
+Output Format
+In ra mảng sau khi chèn
+Sample Input 0
+8 292 5
+343 473 572 525 210 2 874 318 
+Sample Output 0
+343 473 572 525 292 210 2 874 318 
+
+BÀI 22. XÓA
+
+Cho mảng số nguyên A[] gồm N phần tử và số nguyên X, nhiệm vụ của bạn là tìm kiếm xem X có xuất hiện trong mảng hay không, nếu X xuất hiện trong mảng thì thực hiện xóa vị trí xuất hiện đầu tiên của X trong mảng, ngược lại in ra "NOT FOUND" nếu X không xuất hiện.
+Input Format
+Dòng đầu tiên là 2 số nguyên dương N, X; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; -10^3<=A[i], X<=10^3;
+Output Format
+In ra mảng sau khi xóa hoặc in ra NOT FOUND nếu X không xuất hiện trong mảng
+Sample Input 0
+9 212
+359 523 428 952 752 195 613 6 122 
+Sample Output 0
+NOT FOUND
+Sample Input 1
+5 3
+1 3 3 2 5
+Sample Output 1
+1 3 2 5
+
+BÀI 23. MẢNG CỘNG DỒN
+
+Cho mảng số nguyên A[] gồm N phần tử, nhiệm vụ của bạn là xây dựng mảng F cũng có N phần tử trong đó F[0] = A[0] và F[i] = F[i -1] + A[i] với mọi i >= 1. Như vậy bạn thử nghĩ xem F[i] lưu giá trị gì?
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; 0<=A[i]<=10^3;
+Output Format
+In ra mảng cộng dồn F
+Sample Input 0
+5
+124 577 658 919 87 
+Sample Output 0
+124 701 1359 2278 2365 
+
+BÀI 24. CỬA SỔ CỠ K
+Cho mảng số nguyên A[] gồm N phần tử và số nguyên K, nhiệm vụ của bạn là tìm tổng của mọi dãy con liên tiếp cỡ K của mảng A[]
+Gợi ý : Duyệt các chỉ số bắt đầu của các dãy con cỡ K của mảng, chỉ số này chạy từ i = 0, tới i = n - k.
+Input Format
+Dòng đầu tiên là 2 số nguyên dương N, K; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=K<=N<=1000; 0<=A[i]<=10^3;
+Output Format
+In ra tổng của các dãy con K phần tử liên tiếp trong mảng
+Sample Input 0
+7 5
+5 9 4 5 5 8 7 
+Sample Output 0
+28 31 29 
+Explanation 0
+5 + 9 + 4 + 5 + 5 = 28 9 + 4 + 5 + 5 + 8 = 31 4 + 4 + 4 + 8 + 7 = 29
+Sample Input 1
+6 3
+3 8 6 8 0 0 
+Sample Output 1
+17 22 14 8 
+
+BÀI 25. MẢNG CHẴN LẺ
+Cho mảng số nguyên A[] có không quá 10000 phần tử. Hãy xác định xem mảng là mảng chẵn hay mảng lẻ, mảng chẵn được định nghĩa là mảng mà số lượng số chẵn nhiều hơn số lượng số lẻ, ngược lại. Trong trường hợp số lượng số chẵn bằng số lượng số lẻ thì mảng được gọi là mảng chẵn lẻ.
+Input Format
+Gồm nhiều dòng, mỗi dòng có nhiều số là các số trong mảng A[], không biết trước có bao nhiêu số nhưng không vượt quá 10000 số.
+Constraints
+1<=A[i]<=1000
+Output Format
+In ra CHAN nếu mảng chẵn, LE nếu mảng lẻ, CHANLE nếu mảng chẵn lẻ
+Sample Input 0
+3 
+9 7 9 
+7 5 5 
+3 
+Sample Output 0
+LE
+
+BÀI 26. MẢNG ĐÁNH DẤU 1
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy đếm xem có bao nhiêu giá trị khác nhau trong mảng?
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; 0<=A[i]<=10^6;
+Output Format
+In ra số lượng các giá trị khác nhau xuất hiện trong mảng
+Sample Input 0
+5
+3 9 4 0 9 
+Sample Output 0
+4
+Sample Input 1
+5
+1 7 8 1 7 
+Sample Output 1
+3
+
+BÀI 27. MẢNG ĐÁNH DẤU 2
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các giá trị xuất hiện trong mảng theo thứ tự từ nhỏ đến lớn kèm theo tần suất của nó
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; 0<=A[i]<=10^6;
+Output Format
+In ra nhiều dòng, mỗi dòng gồm giá trị và tần suất viết cách nhau một khoảng trắng
+Sample Input 0
+6
+6 6 4 6 0 8 
+Sample Output 0
+0 1
+4 1
+6 3
+8 1
+
+BÀI 28. MẢNG ĐÁNH DẤU 3
+Cho mảng số nguyên A[] gồm N phần tử, hãy liệt kê các giá trị xuất hiện trong mảng theo thứ tự xuất hiện trong mảng kèm theo tần suất của nó, mỗi giá trị chỉ liệt kê một lần.
+Gợi ý : Dùng map hoặc mảng đánh dấu để đếm tần suất sau đó thì duyệt mảng và gặp a[i] thì in ra a[i] kèm tần suất, sau đó có thể xóa a[i] hoặc reset tần suất a[i] về 0 để tránh in trùng
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; 0<=A[i]<=10^6;
+Output Format
+In ra nhiều dòng, mỗi dòng gồm giá trị và tần suất viết cách nhau một khoảng trắng
+Sample Input 0
+9
+1 6 6 9 0 6 4 9 3 
+Sample Output 0
+1 1
+6 3
+9 2
+0 1
+4 1
+3 1
+
+BÀI 29. MẢNG ĐÁNH DẤU 4
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy tìm giá trị có số lần xuất hiện nhiều nhất trong mảng, nếu có nhiều giá trị có cùng số lần xuất hiện thì lấy số có giá trị nhỏ nhất
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; 0<=A[i]<=10^6;
+Output Format
+In ra giá trị có số lần xuất hiện nhiều nhất kèm theo tần suất của nó
+Sample Input 0
+5
+9 4 0 4 5 
+Sample Output 0
+4 2
+Sample Input 1
+5
+1 3 7 7 5 
+Sample Output 1
+7 2
+Sample Input 2
+5
+1 2 3 4 5
+Sample Output 2
+1 1
+
+BÀI 30. MẢNG ĐÁNH DẤU 5
+
+Cho mảng số nguyên A[] gồm N phần tử, hãy tìm giá trị có số lần xuất hiện nhiều nhất trong mảng, nếu có nhiều giá trị có cùng số lần xuất hiện thì lấy giá trị xuất hiện trước theo thứ tự trong mảng
+Input Format
+Dòng đầu tiên là số nguyên dương N; Dòng thứ 2 gồm N số nguyên viết cách nhau một vài khoảng trắng
+Constraints
+1<=N<=1000; 0<=A[i]<=10^6;
+Output Format
+In ra giá trị có số lần xuất hiện nhiều nhất kèm theo tần suất của nó
+Sample Input 0
+6
+7 2 0 3 9 5 
+Sample Output 0
+7 1
+Sample Input 1
+4
+1 2 2 1
+Sample Output 1
+1 2
+
+BÀI 31. CHÈN MẢNG
+
+Cho mảng A[], B[] gồm N và M phần tử, hãy chèn mảng B vào chỉ số P của mảng A và in ra mảng A[] sau khi chèn.
+Input Format
+•	Dòng 1 gồm N, M và P
+•	Dòng 2 gồm các phần trong mảng A[]
+•	Dòng 3 gồm các phần tử trong mảng B[]
+Constraints
+•	1<=N<=M<=1000
+•	0<=P<=N - 1
+•	0<=A[i], B[i]<=1000
+Output Format
+•	In ra mảng A[] sau khi chèn
+Sample Input 0
+10 7 5
+64 94 78 99 50 21 57 41 68 16 
+73 91 15 89 2 85 61 
+Sample Output 0
+64 94 78 99 50 73 91 15 89 2 85 61 21 57 41 68 16
+
+BÀI 32. XOAY TRÁI
+
+Cho mảng A[] gồm N phần tử, hãy dịch các phần tử trong mảng sang trái K vị trí, khi dịch trái thì phần tử đầu tiên của dãy sẽ quay vòng lại trở thành phần tử cuối cùng
+Input Format
+•	Dòng 1 gồm N và K
+•	Dòng 2 gồm N số của mảng A[]
+Constraints
+•	1<=N<=1000
+•	1<=K<=1000
+•	0<=A[i]<=100
+Output Format
+In ra mảng sau khi xoay trái
+Sample Input 0
+8 6
+16 66 96 73 11 13 99 82 
+Sample Output 0
+99 82 16 66 96 73 11 13
+
+BÀI 33. XOAY PHẢI
+
+Cho mảng A[] gồm N phần tử, hãy dịch các phần tử trong mảng sang phải K vị trí, khi dịch phải thì phần tử cuối cùng của dãy sẽ quay vòng lại trở thành phần tử đầu tiên
+Input Format
+•	Dòng 1 gồm N và K
+•	Dòng 2 gồm N số của mảng A[]
+Constraints
+•	1<=N<=1000
+•	1<=K<=1000
+•	0<=A[i]<=100
+Output Format
+In ra mảng sau khi xoay trái
+Sample Input 0
+9 3
+69 3 92 57 52 67 30 42 90 
+Sample Output 0
+30 42 90 69 3 92 57 52 67 
+
+BÀI 34. UNIQUE
+
+Cho mảng A[] gồm N phần tử, nhiệm vụ của bạn là xóa các phần tử trong mảng sao cho không có 2 phần tử liền kề có giá trị giống nhau. Ví dụ mảng A[] = {1, 1, 2, 2, 2, 3, 3, 2, 1, 4} sau khi xóa sẽ được A[] = {1, 2, 3, 2, 1, 4}
+Input Format
+•	Dòng 1 gồm N
+•	Dòng 2 gồm N số của mảng A[]
+Constraints
+•	1<=N<=1000
+•	0<=A[i]<=100
+Output Format
+In ra mảng sau khi xóa
+Sample Input 0
+11
+2 3 3 0 0 0 3 3 3 3 4 
+Sample Output 0
+2 3 0 3 4 
+
+BÀI 35. CỘNG TRỪ
+
+Cho mảng A[] gồm N phần tử là các số nguyên, bạn hãy thực hiện phép tính cộng hoặc trừ N số nguyên này theo hướng dẫn. Bạn được cấp 1 mảng B[] gồm N - 1 phần tử đại diện cho N - 1 phép toán giữa N phần tử ban đầu trong mảng, trong đó 1 tương ứng với phép cộng và 2 tương ứng với phép trừ. Ví dụ A[] = {1, 2, 3, 4, 5} và B[] = {1, 1, 2, 1} ta sẽ tính giá trị của mảng A[] = 1 + 2 + 3 - 4 + 5
+Input Format
+•	Dòng 1 gồm N
+•	Dòng 2 gồm N số của mảng A[]
+•	Dòng 3 gồm N - 1 phần tử của mảng B[]
+Constraints
+•	1<=N<=1000
+•	0<=A[i]<=100
+Output Format
+In ra kết quả của bài toán
+Sample Input 0
+7
+2 1 4 4 1 2 1 
+2 2 2 1 2 1 
+Sample Output 0
+-7
+
