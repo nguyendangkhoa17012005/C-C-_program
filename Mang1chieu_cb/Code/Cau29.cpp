@@ -11,16 +11,19 @@ int main() {
     for(int i = 0; i < n; i++)
     {
         cin >> a[i];
-        cnt[a[i]] = 1;
+        cnt[a[i]]++;
         if(a[i] > max) 
         max = a[i];
     }
-    int find  = 0;
+    int find  = 0, tmp;
     for(int i = 0; i <= max; i++)
     {
-        if(cnt[i] != 0)
-        ++find;
+        if(cnt[i] > find)
+        {
+            find = cnt[i];
+            tmp = i;
+        } 
     }
-    cout << find;
+    cout << tmp << " "<< find;
     return 0;
 }

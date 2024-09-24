@@ -7,20 +7,19 @@ int main() {
     int n;
     cin >> n;
     int a[n];
-    int max = -1e9;
     for(int i = 0; i < n; i++)
     {
         cin >> a[i];
-        cnt[a[i]] = 1;
-        if(a[i] > max) 
-        max = a[i];
+        cnt[a[i]]++;
     }
     int find  = 0;
-    for(int i = 0; i <= max; i++)
+    for(int i = 0; i < n; i++)
     {
-        if(cnt[i] != 0)
-        ++find;
+        if(cnt[a[i]] != 0)
+        {
+            cout << a[i] << " " << cnt[a[i]] << endl;
+            cnt[a[i]] = 0;
+        }
     }
-    cout << find;
     return 0;
 }

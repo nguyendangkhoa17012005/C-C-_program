@@ -11,7 +11,7 @@ int main() {
     for(int i = 0; i < n; i++)
     {
         cin >> a[i];
-        cnt[a[i]] = 1;
+        cnt[a[i]]++;
         if(a[i] > max) 
         max = a[i];
     }
@@ -19,8 +19,7 @@ int main() {
     for(int i = 0; i <= max; i++)
     {
         if(cnt[i] != 0)
-        ++find;
+        cout << i << " " << cnt[i] << endl;
     }
-    cout << find;
     return 0;
 }
